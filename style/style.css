@@ -11,19 +11,26 @@
     outline: 0;
 }
 
+* a{
+    text-decoration: none;
+}
+
 body{
     width: 100%
 }
 
 .container{
     width: 1170px;
-    border: 1px solid #000;
 }
 
 .container-language{
     width: 100%;
     height: 44px;
     background-color: #000000;
+}
+
+.container-fluid{
+    padding: 0;
 }
 
 .change-language{
@@ -47,6 +54,10 @@ body{
     text-transform: uppercase;
 }
 
+.navbar{
+    margin-left: 150px;
+}
+
 .navbar-container{
     box-shadow: 0 13px 29px rgba(157, 31, 184, 0.04);
     background-color: #0a19a7;
@@ -62,7 +73,6 @@ body{
     font-weight: 300;
     line-height: 57.2px;
     text-transform: uppercase;
-    border: 2px solid #ff0000;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -82,8 +92,6 @@ body{
 }
 
 .logo-text{
-    position: relative;
-    left: -20px;
     margin-top: 20px;
     color: #ffffff;
     font-family: Portico,sans-serif;
@@ -95,14 +103,24 @@ body{
 
 .offer-container{
     height: 662px;
-    opacity: 0.47;
     background-image: url("../pictures/slider_image_unsplash.jpg");
-    background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -200px;
+    background-size: 1920px;
+}
+
+.languages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-text{
+    position: relative;
+    top: 130px;
 }
 
 .left-title{
-    margin-top: 107px;
     color: #ffffff;
     font-family: Montserrat,sans-serif;
     font-size: 12px;
@@ -138,7 +156,7 @@ body{
     margin-top: 41px;
 }
 
-p{
+p {
     display: flex;
     justify-content: center;
     color: #000000;
@@ -168,31 +186,27 @@ p{
  }
 
  .feature{
-     height: 1820px;
      background: #000000;
  }
 
  .rectangle{
-     background: url("../pictures/Слой_6.png");
+     background: url("../pictures/Rectangle.png");
+     background-repeat: no-repeat;
  }
 
  .miners{
-     height: 1150px;
      background: #000000;
  }
 
  .items{
      width: 270px;
      height: 438px;
-     background-color: #f1f1f3;
      margin-top: 48px;
  }
 
  .picture-item{
      display: flex;
-     justify-content: center;
      margin: 0 auto;
-     padding: 42px;
  }
 
  .bitmain-title{
@@ -227,7 +241,6 @@ p{
  }
 
  .footer{
-     height: 473px;
      background-color: #0a19a7;
  }
 
@@ -235,7 +248,7 @@ p{
      width: 104px;
      height: 9px;
      opacity: 0.4;
-     color: #000000;
+     color: #ffffff;
      font-family: "Montserrat-Extra Bold", sans-serif;
      font-size: 12px;
      font-weight: 400;
@@ -245,13 +258,341 @@ p{
  }
 
  .row-footer-text{
-     width: 149px;
+     width: 175px;
      height: 230px;
-     color: #000000;
+     color: #f1f1f3;
      font-family: Montserrat,sans-serif;
      font-size: 14px;
      font-weight: 500;
      line-height: 36px;
      margin-top: 30px;
+     display: flex;
  }
 
+ .row-footer-text img{
+     color: #f1f1f3;
+ }
+
+ .navigation{
+     display: flex;
+ }
+
+ .right-title{
+     color: #ffffff;
+     font-family: Montserrat, sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 57.2px;
+     text-transform: uppercase;
+ }
+
+ .right-subtitle{
+     color: #ffffff;
+     font-family: Lato,sans-serif;
+     font-size: 48px;
+     font-weight: 400;
+     line-height: 60px;
+     /* Text style for "Get an Ext" */
+     font-family: "Lato - Regular",sans-serif;
+     font-weight: 400;
+     letter-spacing: -0.93px;
+     /* Text style for "50% off" */
+     font-family: "Lato - Bold",sans-serif;
+     font-weight: 700;
+     letter-spacing: -0.93px;
+     width: 272px;
+     margin-top: 30px;
+ }
+
+ .right-button{
+     width: 171px;
+     height: 51px;
+     box-shadow: 0 15px 24px rgba(0, 0, 0, 0.3);
+     border-radius: 26px;
+     background-color: #f4b200;
+     margin-top: 41px;
+ }
+
+ .right-text{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 80px;
+ }
+
+ .feature .row{
+     margin-top: 90px;
+ }
+
+ .rectangle img{
+     position: relative;
+     float: right;
+ }
+
+ .right-rectangle-text{
+     margin-left: 75px;
+ }
+
+.right-rectangle-title{
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.right-rectangle-subtitle{
+    color: #ffffff;
+    font-family: "Lato - Black",sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-top: 50px;
+}
+
+.right-rectangle-contitle{
+    color: #ffffff;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 35px;
+}
+
+.right-rectangle-button{
+    width: 134px;
+    height: 38px;
+    border-radius: 19px;
+    border: 2px solid #ffffff;
+    margin-top: 25px;
+}
+
+.rectangle-shop{
+    color: #ffffff;
+    position: relative;
+    bottom: 10px;
+}
+
+.miners .row{
+    margin-top: 20px;
+}
+
+.miners-items{
+    background-color: #f1f1f3;
+    margin: 10px auto;
+    width: 230px;
+    height: 438px;
+}
+
+.miners-items .btn{
+    margin-top: 25px;
+}
+
+.miners-ico{
+    position: absolute;
+}
+.sale{
+    background: url("../pictures/Прямоугольник,_скругл._углы_1.png");
+    background-repeat: no-repeat;
+    color: #f1f1f3;
+    font-family: "Montserrat - Extra Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 57.2px;
+    text-transform: uppercase;
+}
+
+.bitmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bitmain-title .bitmain-subtitle .bitmain-price-title .bitmain-price-subtitle{
+    margin: 10px auto;
+}
+
+.blockchaininc h1{
+    color: #ffffff;
+    font-family: Portico, sans-serif;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 73.05px;
+    text-transform: uppercase;
+}
+
+.blockchaininc h6{
+    background: url("../pictures/Phone_BG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #000000;
+    font-family: "Lato - Black",sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 73.05px;
+}
+
+.blockchaininc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.dm-title{
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+/* активируем модальное окно */
+
+.dm-overlay:target {
+    display: block;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    z-index: 99999;
+}
+/* блочная таблица */
+
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+
+.dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+
+.dm-modal {
+    display: inline-block;
+    width: 100%;
+    max-width: 50em;
+    background: #fff;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #000;
+    text-align: left;
+}
+/* изображения в модальном окне */
+
+.dm-modal img {
+    width: 100%;
+    height: auto;
+}
+.block-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.sendBtn{
+    background-color: #f1a42d;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+    text-align: center;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.name{
+    background-color: #cccccc;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.number{
+    background-color: #cccccc;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+#text-message{
+    background-color: #cccccc;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.close {
+    z-index: 9999;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.close:after {
+    display: block;
+    border: 2px solid #cfd8dc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: 'X';
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+/* кнопка закрытия при наведении */
+
+.close:hover:after {
+    border-color: #fff;
+    color: #fff;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.right-button a{
+text-decoration: none;
+}
+.left-button a{
+    text-decoration: none;
+}
+
+.right-rectangle-button a{
+    text-decoration: none;
+}
+
+.btn a{
+    text-decoration: none;
+}
