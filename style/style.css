@@ -379,14 +379,14 @@ p {
 }
 
 .miners-items{
-    background-color: #f1f1f3;
+    background-color: #ffffff;
     margin: 10px auto;
     width: 230px;
     height: 438px;
 }
 
 .miners-items .btn{
-    margin-top: 25px;
+    margin-top: 70px;
 }
 
 .miners-ico{
@@ -595,4 +595,8 @@ text-decoration: none;
 
 .btn a{
     text-decoration: none;
+}
+
+.miners-items img{
+    width: 230px;
 }
