@@ -230,7 +230,6 @@ p {
  }
 
  .buy{
-     width: 85px;
      height: 11px;
      color: #000000;
      font-family: "Montserrat-Extra Bold",sans-serif;
@@ -300,7 +299,8 @@ p {
      font-family: "Lato - Bold",sans-serif;
      font-weight: 700;
      letter-spacing: -0.93px;
-     width: 272px;
+     width: 200px;
+     text-align: center;
      margin-top: 30px;
  }
 
@@ -361,7 +361,7 @@ p {
 }
 
 .right-rectangle-button{
-    width: 134px;
+    width: 150px;
     height: 38px;
     border-radius: 19px;
     border: 2px solid #ffffff;
@@ -599,4 +599,16 @@ text-decoration: none;
 
 .miners-items img{
     width: 230px;
+}
+
+#whatsminer{
+    width: 173px;
+}
+
+#innosilicon{
+    width: 185px;
+}
+
+#antimert19{
+    width: 173px;
 }
